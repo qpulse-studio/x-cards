@@ -4,7 +4,20 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>PULSE GP race replay</title>
-<style>html,body{margin:0;height:100%;background:#000;overflow:hidden}iframe{border:0;width:100%;height:100%;display:block}</style>
+<link href="https://fonts.googleapis.com/css2?family=Audiowide&display=swap" rel="stylesheet">
+<style>
+html,body{margin:0;height:100%;background:#000;overflow:hidden}
+iframe{border:0;width:100%;height:100%;display:block}
+.play{position:fixed;left:2.5%;top:3.5%;z-index:2;display:flex;align-items:center;gap:.6em;padding:.55em 1.1em;
+  font:clamp(12px,2.4vw,22px)/1 Audiowide,sans-serif;letter-spacing:.06em;color:#fff;text-decoration:none;
+  background:linear-gradient(#ff2a2a,#c20000);border:2px solid #ff6a6a;border-radius:.45em;
+  box-shadow:0 0 1.2em rgba(255,0,0,.55),0 .2em .6em rgba(0,0,0,.6)}
+.play:hover{filter:brightness(1.15)}
+.play::before{content:"";border-left:.75em solid #fff;border-top:.45em solid transparent;border-bottom:.45em solid transparent}
+</style>
 </head>
-<body><iframe src="https://qpulse.studio:4434/?level=barcelona150&amp;replay=e7hh1g29&amp;embed" allow="autoplay; fullscreen" allowfullscreen></iframe></body>
+<body>
+<iframe src="https://qpulse.studio:4434/?level=barcelona150&amp;replay=e7hh1g29&amp;embed" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<a class="play" href="https://qpulse.studio/" target="_blank" rel="noopener">PLAY PULSE GP</a>
+</body>
 </html>
