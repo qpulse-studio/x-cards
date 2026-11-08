@@ -9,13 +9,13 @@
 html,body{margin:0;height:100%;background:#000;overflow:hidden}
 iframe{border:0;width:100%;height:100%;display:block}
 .play{position:fixed;left:2.5%;top:3.5%;z-index:2;display:flex;align-items:center;gap:.6em;padding:.55em 1.1em;
-  font:clamp(12px,2.4vw,22px)/1 Audiowide,sans-serif;letter-spacing:.06em;color:#fff;text-decoration:none;
+  font:clamp(12px,2.4vw,22px)/1 Audiowide,sans-serif;letter-spacing:.06em;color:#000;text-decoration:none;
   background:linear-gradient(#ff2a2a,#c20000);border:2px solid #ff6a6a;border-radius:.45em;
   box-shadow:0 0 1.2em rgba(255,0,0,.55),0 .2em .6em rgba(0,0,0,.6)}
-.play{animation:blink 1s steps(1) infinite}
+.play{animation:blink 1.25s linear infinite}
 .play:hover{filter:brightness(1.15);animation:none}
-@keyframes blink{50%{opacity:.25}}
-.play::before{content:"";border-left:.75em solid #fff;border-top:.45em solid transparent;border-bottom:.45em solid transparent}
+@keyframes blink{0%,80%{opacity:1}80.01%,100%{opacity:.25}}
+.play::before{content:"";border-left:.75em solid #000;border-top:.45em solid transparent;border-bottom:.45em solid transparent}
 </style>
 </head>
 <body>
